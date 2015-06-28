@@ -1,0 +1,162 @@
+/* ==========================================================================
+   5. Single Post - When you click on an individual post
+   ========================================================================== */
+
+.post-template {
+   .post-header {
+      margin-bottom: 3.4rem;
+   }
+
+   .post-title {
+       margin-bottom: 0;
+   }
+
+   .post-meta {
+       margin: 0;
+   }
+
+   .post-date {
+       padding: 0;
+       margin: 0;
+       border: none;
+   }
+
+   /* Stop elements, such as img wider than the post content, from
+      creating horizontal scroll - slight hack due to imperfections
+      with browser width % calculations and rounding */
+   .content {
+       overflow: hidden;
+   }
+
+   /* Tweak the .post wrapper style */
+   .post {
+       margin-top: 0;
+       border-bottom: none;
+       padding-bottom: 0;
+   }
+
+   /* Kill that stylish little circle that was on the border, too */
+   .post:after {
+       display: none;
+   }
+}
+
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
+.post-content img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
+}
+
+.footnotes {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+
+    li {
+       margin: 0.6rem 0;
+   }
+
+   p {
+       margin: 0;
+
+      a {
+         &:last-child {
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+/* The author credit area after the post */
+.post-footer {
+   position: relative;
+   margin: 6rem 0 0 0;
+   padding: 6rem 0 0 0;
+   border-top: #EBF2F6 1px solid;
+
+   /* Create some space to the right for the share links */
+   .author {
+      margin-right: 180px;
+   }
+
+   /* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+   .share {
+       position: absolute;
+       top: 6rem;
+       right: 0;
+       width: 140px;
+
+      a {
+         font-size: 1.8rem;
+         display: inline-block;
+         margin: 1rem 1.6rem 1.6rem 0;
+         color: #BBC7CC;
+         text-decoration: none;
+      }
+
+      .icon-twitter:hover {
+         color: #55acee;
+      }
+      .icon-facebook:hover {
+         color: #3b5998;
+      }
+      .icon-google-plus:hover {
+         color: #dd4b39;
+      }
+   }
+
+   h4 {
+      font-size: 1.8rem;
+      margin: 0;
+
+      a {
+         color: #2e2e2e;
+         text-decoration: none;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   p {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      line-height: 1.75em;
+   }
+}
+
+/* list of author links - location / url */
+.author-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+
+   a {
+      color: #9EABB3;
+
+      &:hover {
+         color: #111;
+      }
+   }
+}
+
