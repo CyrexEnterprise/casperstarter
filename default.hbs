@@ -15,21 +15,20 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/bower_components/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/animations.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/author-profile.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/casper.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/general.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="/staging/css/main.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/media-queries.css" />
-    <link rel="stylesheet" type="text/css" href="/staging/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/pagination.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/read-more.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/single-post.css" />
     <link rel="stylesheet" type="text/css" href="/staging/css/utilities.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-
+    <link rel="stylesheet" type="text/css" href="/staging/css/casperStarter.css" />
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -53,7 +52,9 @@
     {{ghost_foot}}
 
     {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/bower_components/modernizr/modernizr.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="/staging/js/casperStarter.js"></script>
 </body>
 </html>

@@ -3,7 +3,6 @@
 module.exports = {
   css: {
     src: [
-    "<%= dirs.source %>/css/normalize.less",
     "<%= dirs.source %>/css/icons.less",
     "<%= dirs.source %>/css/general.less",
     "<%= dirs.source %>/css/utilities.less",

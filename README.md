@@ -1,9 +1,21 @@
 # casperStarter
-> A grunt + less version of the casper theme for Ghost.
+> A grunt + bower + less version of the casper theme for Ghost.
 
 ## Why?
-This theme version is built on top of a [grunt](http://gruntjs.com/) structure, which makes it incredibly flexible and scalable, from the start. It's a perfect starting point if you want to create your own theme on top of an existig casper theme.
+This theme version is built on top of a [grunt](http://gruntjs.com/) structure, with the [bower](http://bower.io/) upgrade, making it incredibly flexible and scalable from the start. It's a perfect starting point if you want to create your own theme on top of an existig casper theme.
 All the CSS has been split up into separate files, so you can easily change or simply chose which ones to use, or not.
+
+## Features
+
+- Follows Ghost theme best practices
+- It has the base file structure and CSS style of Casper
+- CSS has been split into separated files to make the overwrite easier
+- User LESS instead of CSS
+- It has bower included
+- It has modernizr.js included
+- It has normalize.css added the right way
+- It features code minification & concatenation
+- It has jslint built in the development
 
 ## Install
 Just add the casperStarter folder to your `/themes` folder, and activate the theme in the admin panel.
@@ -24,7 +36,7 @@ None of these folders are present in the theme by default, they are a result of 
 
 #### Install dependencies
 After adding the theme, command-line to it and do a `npm install`. That will install all the necessary dependencies.
-Next, do a `grunt watcher`, to start the watcher.
+Next, do a `bower install` to install al the bower dependencies, and then a `grunt watcher` to start the watcher.
 
 #### Edit files
 If your watcher is running, the edited `.js` and `.less` files will be built into `/staging`. Notice that by default the `default.hbs` file is pointing to those files. When releasing, you must point them to the `/dist` folder instead, like so:

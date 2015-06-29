@@ -1,0 +1,24 @@
+{
+  "name": "casperStarter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Cloudoki/casperStarter",
+  "authors": [
+    "Rui Molefas <rui@cloudoki.com>"
+  ],
+  "description": "A grunt + bower + less version of the casper theme for Ghost.",
+  "keywords": [
+    "Ghost",
+    "Theme",
+    "Casper"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.3"
+  }
+}
