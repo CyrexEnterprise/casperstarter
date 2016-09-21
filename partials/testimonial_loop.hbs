@@ -1,0 +1,11 @@
+{{! This is the testimonial loop - each post will be output using this markup }}
+{{#foreach posts}}
+  {{#has tag="testimonial"}}
+    <article class="{{post_class}}">
+      <img src="{{image}}"></img>
+      <section class="post-excerpt">
+        <p>{{excerpt}}</p>
+      </section>
+    </article>
+  {{/has}}
+{{/foreach}}
