@@ -1,7 +1,7 @@
 {
-  "name": "casperStarter",
+  "name": "axisFromCapserStarter",
   "version": "1.0.0",
-  "homepage": "https://github.com/Cloudoki/casperStarter",
+  "homepage": "https://github.com/lazaruslarue/casperStarter",
   "authors": [
     "Rui Molefas <rui@cloudoki.com>"
   ],
@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "modernizr": "~2.8.3",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "jquery": "^3.1.0"
   }
 }
