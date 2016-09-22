@@ -1,3 +1,45 @@
 /* ==========================================================================
    Casper Starter - Add you custom CSS here
    ========================================================================== */
+ .tag-instruction {
+   display: webkit flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   &.column {
+     flex-direction: column;
+     -webkit-flex-direction: column;
+   }
+   &.column-reverse {
+     flex-direction: column-reverse;
+     -webkit-flex-direction: column-reverse;
+   }
+   p {
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+
+     -webkit-flex-flow: row wrap;
+     flex-flow: row wrap;
+     color: red;
+     align-items: center;
+
+   }
+
+   p:nth-child(2n) {
+
+     background-color: white;
+     img {
+
+     }
+   }
+   p:nth-child(2n+1) {
+
+     background-color: blue;
+     img {
+
+     }
+   }
+ }
