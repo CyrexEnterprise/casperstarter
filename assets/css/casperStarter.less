@@ -99,3 +99,29 @@ body {
 .share-social {
   height: 10em;
 }
+
+// section.post-content img:nth-of-type(2n + 1) {
+//   background-color: red;
+//   float: right;
+// }
+section.post-content {
+  display: flex;
+
+  p:nth-of-type(2n +1) {
+    background-color: green;
+    float: left;
+    img { float: right;    }
+  }
+  p:nth-of-type(2n +1) {
+    float: right;
+    img { float: left}
+  }
+  // p:nth-of-type(2n) {
+  //   background-color: yellow;
+  //   float: right;
+  // }
+  // img:nth-of-type(2n) {
+  //   float: left;
+  //
+  // }
+}
