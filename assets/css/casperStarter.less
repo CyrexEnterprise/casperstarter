@@ -59,6 +59,9 @@
  //   }
  // }
 
+body {
+  background-color: grey;
+}
 
  /* instruction partial */
 .tag-instruction {
@@ -71,6 +74,28 @@
   }
 }
 /* share partial */
+.share-container {
+  display: flex;
+  flex-flow: column;
+}
+.share-segment {
+  justify-content: center;
+  display: flex;
+  flex-flow: row;
+}
+
+.contact-item {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: .5rem;
+  p {
+    text-align: center;
+  }
+}
+
 .share-social {
-    height: 10em;
+  height: 10em;
 }
