@@ -1,78 +1,67 @@
 /* ==========================================================================
    Casper Starter - Add you custom CSS here
    ========================================================================== */
- // .tag-instruction {
- //   display: webkit flex;
- //   display: flex;
- //   -webkit-flex-direction: column;
- //   flex-direction: column;
- //   &.column {
- //     flex-direction: column;
- //     -webkit-flex-direction: column;
- //   }
- //   &.column-reverse {
- //     flex-direction: column-reverse;
- //     -webkit-flex-direction: column-reverse;
- //   }
- //   p {
- //     display: -webkit-box;
- //     display: -moz-box;
- //     display: -ms-flexbox;
- //     display: -webkit-flex;
- //     display: flex;
- //
- //     -webkit-flex-flow: row wrap;
- //     flex-flow: row wrap;
- //     color: red;
- //    //  align-items: center;
- //     flex: 3 0px;
- //      padding: 1em;
- //      font-size: 2em;
- //      img {
- //        flex: 1 auto;
- //    background-color: black;
- //    padding: 1em;
- //    max-width: 50%;
- //    max-height: 20rem;
- //    object-fit: contain;
- //      }
- //   }
- //
- //   p:nth-child(2n) {
- //     text-align: left;
- //     background-color: white;
- //     img {
- //       flex: 1 auto;
- //   background-color: black;
- //   padding: 1em;
- //   max-width: 50%;
- //   max-height: 20rem;
- //   object-fit: contain;
- //     }
- //   }
- //   p:nth-child(2n+1) {
- //     text-align: right;
- //     background-color: blue;
- //     img {
- //       order: -1
- //     }
- //   }
- // }
 
-body {
-  background-color: grey;
+/* default layout */
+.site-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
- /* instruction partial */
-.tag-instruction {
-  p:nth-child(2n+1) {
-    // background-color: red;
-    text-align: right;
-    img {
-      // float: right;
-    }
-  }
+.site-wrapper > * {
+  flex: 1 100%;
 }
+
+.header {
+  background: blue;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  background: deepskyblue;
+  flex: 1 4 40%;
+  
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto;}
+}
+@media all and (min-width: 800px) {
+  .main {flex: 3 px;}
+  .aside-1 { order: 2;}
+  .main { order: 1;}
+  .aside-2 { order: 3;}
+  .footer { order: 4;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* share partial */
 .share-container {
   display: flex;
@@ -98,30 +87,4 @@ body {
 
 .share-social {
   height: 10em;
-}
-
-// section.post-content img:nth-of-type(2n + 1) {
-//   background-color: red;
-//   float: right;
-// }
-section.post-content {
-  display: flex;
-
-  p:nth-of-type(2n +1) {
-    background-color: green;
-    float: left;
-    img { float: right;    }
-  }
-  p:nth-of-type(2n +1) {
-    float: right;
-    img { float: left}
-  }
-  // p:nth-of-type(2n) {
-  //   background-color: yellow;
-  //   float: right;
-  // }
-  // img:nth-of-type(2n) {
-  //   float: left;
-  //
-  // }
 }

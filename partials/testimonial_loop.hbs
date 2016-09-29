@@ -1,11 +1,14 @@
-{{! This is the testimonial loop - each post will be output using this markup }}
+{{! This is the testimonial loop}}
 {{#foreach posts}}
-  {{#has tag="testimonial"}}
-    <article class="{{post_class}}">
-      <img src="{{image}}"></img>
-      <section class="post-excerpt">
-        <p>{{excerpt}}</p>
-      </section>
-    </article>
-  {{/has}}
+{{#has tag="axis customer testimonials"}}
+<article class="{{post_class}}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <img src="{{image}}" alt="" />
+    </section>
+</article>
+{{/has}}
 {{/foreach}}

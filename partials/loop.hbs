@@ -2,7 +2,6 @@
 <div class="extra-pagination inner">
     {{pagination}}
 </div>
-
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 <article class="{{post_class}}">
@@ -11,13 +10,8 @@
     </header>
     <section class="post-excerpt">
         <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <img src="{{image}}" alt="" />
     </section>
-    <footer class="post-meta">
-        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-        {{author}}
-        {{tags prefix=" on "}}
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </footer>
 </article>
 {{/foreach}}
 
