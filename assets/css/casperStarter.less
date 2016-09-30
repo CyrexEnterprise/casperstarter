@@ -1,7 +1,22 @@
 /* ==========================================================================
    Casper Starter - Add you custom CSS here
    ========================================================================== */
+/* flex */
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 
+  .row {
+    flex-direction: row wrap;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+}
 /* default layout */
 .site-wrapper {
   display: -webkit-box;
@@ -20,6 +35,37 @@
 
 .header {
   background: blue;
+  background-size: cover no-repeat;
+}
+
+.youtube_intro {
+  flex: 1 100%;
+  height: 15em;
+  background: coral;
+}
+.flexbox.row.pair {
+  background: lightgrey;
+  flex-flow: row wrap;
+  flex: 1 auto;
+  .pair-content {
+    flex: 2 1 25%;
+    padding: 1em 2em;
+    // p:first-child {
+    //
+    // }
+  }
+  img {
+    max-height: 1em;
+  }
+  .pair-image {
+    flex: 2 1 25%;
+    // margin: 10em 0 10em 0;
+  }
+
+  .left {
+    order: -1;
+    margin: 10em 4em 10em 0;
+  }
 }
 
 .footer {
@@ -28,8 +74,6 @@
 
 .main {
   background: deepskyblue;
-  flex: 1 4 40%;
-  
 }
 
 .aside-1 {
@@ -50,6 +94,7 @@
   .aside-2 { order: 3;}
   .footer { order: 4;}
 }
+
 
 
 

@@ -1,3 +1,14 @@
 {{!< default}}
 
-<iframe class="instruction-video" src="https://www.youtube.com/embed/grsrzjkthh8"></iframe>
+{{#foreach posts}}
+ {{#if featured}}
+    <article class="{{post_class}}">
+        <header class="header">
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        </header>
+        <section class="youtube_intro">
+            {{content}}
+        </section>
+    </article>
+  {{/if}}
+{{/foreach}}

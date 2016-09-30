@@ -2,12 +2,9 @@
 {{#foreach posts}}
 {{#has tag="axis customer testimonials"}}
 <article class="{{post_class}}">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-        <img src="{{image}}" alt="" />
+    <section class="flexbox row pair">
+        <div class="pair-content">{{content}}</div>
+        <img class="pair-image" src="{{image}}" alt="" />
     </section>
 </article>
 {{/has}}
