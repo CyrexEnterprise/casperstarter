@@ -11,7 +11,8 @@
   justify-content: center;
 
   .row {
-    flex-direction: row wrap;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
   }
 
   .column {
@@ -111,19 +112,47 @@
 /* testimonial_loop partial */
 .testimonial_loop {
   background-color: black;
+  height:90vh;
 }
 
 .testimonial {
-  width: 50%;
-  height:90vh;
+  flex: 1 100%;
 
-  background-size: 100% auto;
+  @media all and (min-width: 600px) {
+    flex: 1 50%;
+  }
+
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px red dashed;
 
-  div {
-    border: 1px pink dashed;
+  .overlay {
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.65rem;
+    margin: 0 1% 5% 1%;
+
+    line-height: 1.2;
+
+    p {
+      font-size: 1rem;
+      color: black;
+    }
+    p:nth-last-child(2) {
+      font-size: .8rem;
+      margin: 0;
+    }
+    p:last-child {
+      margin: 0;
+      font-size: .65rem;
+    }
   }
 }
 

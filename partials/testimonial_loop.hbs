@@ -2,7 +2,11 @@
 {{#foreach posts}}
 {{#has tag="axis customer testimonials"}}
 <article class="flexbox testimonial" {{#if image}}style="background-image: url({{image}})"{{/if}}>
-  <div>{{content}}</div>
+  <div>
+    <div class="flexbox overlay">
+      {{content}}
+    </div>
+  </div>
 </article>
 {{/has}}
 {{/foreach}}
