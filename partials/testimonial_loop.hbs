@@ -1,11 +1,15 @@
 {{! This is the testimonial loop}}
 {{#foreach posts}}
 {{#has tag="axis customer testimonials"}}
-<article class="{{post_class}}">
-    <section class="flexbox row pair">
-        <div class="pair-content">{{content}}</div>
-        <img class="pair-image" src="{{image}}" alt="" />
-    </section>
+<article class="flexbox testimonial" {{#if image}}style="background-image: url({{image}})"{{/if}}>
+  <div>{{content}}</div>
 </article>
 {{/has}}
 {{/foreach}}
+
+
+
+<!-- <section class="flexbox row pair">
+    <div class="pair-content">{{content}}</div>
+    <img class="pair-image" src="{{image}}" alt="" />
+</section> -->

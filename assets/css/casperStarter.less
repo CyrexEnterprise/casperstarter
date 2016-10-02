@@ -8,6 +8,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: center;
 
   .row {
     flex-direction: row wrap;
@@ -54,6 +55,7 @@
   height: 15em;
   background: coral;
 }
+
 .flexbox.row.pair {
   background: lightgrey;
   flex-flow: row wrap;
@@ -66,7 +68,6 @@
     // }
   }
   img {
-    max-height: 1em;
   }
   .pair-image {
     flex: 2 1 25%;
@@ -107,9 +108,24 @@
 }
 
 
+/* testimonial_loop partial */
+.testimonial_loop {
+  background-color: black;
+}
 
+.testimonial {
+  width: 50%;
+  height:90vh;
 
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px red dashed;
 
+  div {
+    border: 1px pink dashed;
+  }
+}
 
 
 
