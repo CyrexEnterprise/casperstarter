@@ -3,6 +3,7 @@
    ========================================================================== */
 html {
   font-family: Lato, sans-serif;
+  background-color: black;
 }
 
 /* flex */
@@ -92,29 +93,6 @@ html {
   }
 }
 
-.footer {
-  background: lightgreen;
-}
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
-}
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto;}
-}
-@media all and (min-width: 800px) {
-  .main {flex: 3 px;}
-  .aside-1 { order: 2;}
-  .main { order: 1;}
-  .aside-2 { order: 3;}
-  .footer { order: 4;}
-}
-
 /* section heading partial */
 .section-heading {
   text-align: center;
@@ -198,16 +176,22 @@ html {
   }
 }
 
-
-
-
+.patent p {
+  padding: 2rem;
+  color: white;
+}
 
 /* share partial */
+.social {
+  color: white;
+}
+
 .share-container {
   display: flex;
   flex-flow: column;
 }
 .share-segment {
+  padding-top: 2rem;
   justify-content: center;
   display: flex;
   flex-flow: row;

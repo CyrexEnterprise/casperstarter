@@ -43,16 +43,16 @@
         <section class="main">
           {{{body}}}
         </section>
-        <section class="aside aside-1">
-
+        <section class="patent">
+          {{> section_header heading="Patent Information"}}
           {{> "patent_details"}}
         </section>
-        <section class="aside aside-2">
+        <section class="social">
+          {{> section_header heading="Connect With Us"}}
           {{> "social"}}
-
         </section>
         <section class="footer">
-          {{> buy_now}}
+          <!-- {{> buy_now}} -->
           <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
             <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
