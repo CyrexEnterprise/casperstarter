@@ -29,12 +29,15 @@
 
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+
+  background-color: black;
 }
 
 .site-wrapper > * {
   flex: 1 100%;
 }
 
+/* main header */
 .main-header {
   background: black;
   background-size: contain;
@@ -54,8 +57,11 @@
 
 .youtube_intro {
   flex: 1 100%;
-  height: 15em;
-  background: coral;
+  height: 360px;
+
+  iframe {
+    margin: 0;
+  }
 }
 
 .flexbox.row.pair {
@@ -84,10 +90,6 @@
 
 .footer {
   background: lightgreen;
-}
-
-.main {
-  background: deepskyblue;
 }
 
 .aside-1 {
@@ -162,6 +164,7 @@
   justify-content: space-around;
   list-style: none;
   background: tomato;
+  margin: 0;
 
   li {
     margin: 0;
