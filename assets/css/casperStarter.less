@@ -184,6 +184,7 @@ html {
 /* share partial */
 .social {
   color: white;
+  flex-flow: column;
 }
 
 .share-container {
@@ -193,12 +194,19 @@ html {
 .share-segment {
   padding-top: 2rem;
   justify-content: center;
-  display: flex;
+  // display: flex;
+  flex: 1 100%;
   flex-flow: row;
 }
+.social-out {
+  flex: 1 100%;
 
+  @media all and (min-width: 600px) {
+    flex: 1 50%;
+  }
+}
 .contact-item {
-  display: flex;
+  // display: flex;
   flex-flow: column;
   flex-wrap: wrap;
   justify-content: center;
