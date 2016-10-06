@@ -39,12 +39,25 @@
     <div class="site-wrapper">
 
         {{! Everything else gets inserted here }}
-        {{{body}}}
 
-        <footer class="site-footer clearfix">
+        <section class="main">
+          {{{body}}}
+        </section>
+        <section class="patent">
+          {{> section_header heading="Patent Information"}}
+          {{> "patent_details"}}
+        </section>
+        <section class="social">
+          {{> section_header heading="Connect With Us"}}
+          {{> "social"}}
+        </section>
+        <section class="footer">
+          <!-- {{> buy_now}} -->
+          <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
             <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
+          </footer>
+        </section>
 
     </div>
 
@@ -53,8 +66,9 @@
 
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="/bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-    <script type="text/javascript" src="/staging/js/casperStarter.js"></script>
+    <script type="text/javascript" src="{{asset "js/casperStarter.js"}}"></script>
 </body>
 </html>
