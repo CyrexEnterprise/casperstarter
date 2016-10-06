@@ -159,6 +159,12 @@ html {
   margin: 0;
 
   li {
+    flex: 1 30%;
+    text-align: center;
+    @media all and (min-width: 600px) {
+      flex: 1 50%;
+      text-align: center;
+    }
     margin: 0;
   }
 
@@ -194,7 +200,6 @@ html {
 .share-segment {
   padding-top: 2rem;
   justify-content: center;
-  // display: flex;
   flex: 1 100%;
   flex-flow: row;
 }
